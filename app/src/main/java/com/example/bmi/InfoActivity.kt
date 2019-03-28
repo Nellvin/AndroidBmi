@@ -1,9 +1,11 @@
 package com.example.bmi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
+import kotlinx.android.synthetic.main.activity_info.*
 
 class InfoActivity : AppCompatActivity() {
 
@@ -12,6 +14,16 @@ class InfoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_info)
         val actionBar = supportActionBar
         actionBar!!.title = "Info"
-        Toast.makeText(this, "Niestety Jeszcze Tu nie doszedłem :c", LENGTH_SHORT).show()
+        if(!intent.getStringExtra("bmiValue").equals("?")) {
+            textView10.text = intent.getStringExtra("bmiValue")
+            textView11.text= intent.getStringExtra("bmiValueInfo")
+        }
+        else {
+            textView10.text = "Bez podania danych dużo Ci nie pomogę :/"
+            textView11.text= ""
+        }
+
+
+
     }
 }
