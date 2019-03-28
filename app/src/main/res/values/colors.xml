@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorJakisMaloZdrowy">#0F3B97</color>
+    <color name="colorJakisLapisLazuli">#3366cc</color>
+    <color name="colorJakisGrynszpan">#00a693 </color>
+    <color name="colorJakisRóżPompejański">#b80000 </color>
+    <color name="colorJakiśGruby">#7f001b </color>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bmi_margin_elements">8dp</dimen>
+    <dimen name="bmi_matchconstraint">0dp</dimen>
+    <dimen name="bmi_topmaring_elements">12dp</dimen>
+    <dimen name="bmi_maintext">44dp</dimen>
+    <dimen name="bmi_buttons">53dp</dimen>
+    <dimen name="bmi_topmargin_elements">8dp</dimen>
+    <dimen name="bmi_bottommargin_elements">16dp</dimen>
+    <dimen name="bmi_smallertext">24dp</dimen>
+    <dimen name="bmi_elementshight_textview">58dp</dimen>
+    <dimen name="bmi_mainimage">270dp</dimen>
+</resources>
