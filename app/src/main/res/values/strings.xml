@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Bmi</string>
-    <string name="app_namee3">Bme3ei</string>
     <string name="help">Help</string>
     <string name="main_menu_abourMe">About me</string>
     <string name="main_menu_changeMesures">Change Mesures</string>
@@ -12,7 +11,7 @@
     <string name="myFamily">
         <a href="https://en.wikipedia.org/wiki/L%C3%B6ffler">Inni Löffler</a>
     </string>
-    <string name="about_me">Cześć jestem Filip Löffler \n zrobiłem tą śmieszą aplikacje \ni mam nadziję że sie podoba
+    <string name="about_me">Cześć jestem Filip Löffler \n zrobiłem tą śmieszą aplikacje \ni mam nadzieję, że sie podoba
     </string>
 
 </resources>

@@ -22,17 +22,13 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             weightString = editText2.text.toString()
             heightString = editText.text.toString()
-            //if (heightString != null) {
+
             if (!heightString.equals(""))
                 height = heightString.toDouble()
-
-            //}
             else
                 height = 0.0
-            //if (weightString != null) {
             if (!weightString.equals(""))
                 weight = weightString.toDouble()
-            // }
             else
                 weight = 0.0
 
@@ -81,9 +77,7 @@ class MainActivity : AppCompatActivity() {
                 bmiText = "Super Obese"
             if (bmiCount > 60) {
                 bmiText = "Hyper Obese"
-//                textView2.setTextColor(0xfffffff)
             }
-            //bmiText = bmiCount.toString() + "\n" + bmiText
             if (bmiCount != 0.0) {
                 textView2.text = bmiCount.toString()
                 textView.text = bmiText
@@ -98,8 +92,8 @@ class MainActivity : AppCompatActivity() {
         }
         imageButton5.setOnClickListener {
             val intent = Intent(this, InfoActivity::class.java)
-            intent.putExtra("bmiValue",textView2.text.toString())
-            intent.putExtra("bmiValueInfo",textView.text.toString())
+            intent.putExtra("bmiValue", textView2.text.toString())
+            intent.putExtra("bmiValueInfo", textView.text.toString())
             startActivity(intent)
         }
     }
@@ -135,8 +129,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSaveInstanceState(outState: Bundle?) {
-//        super.onSaveInstanceState(outState)
-//        outState!!.putString("Heigh", editText.text.toString())
         outState?.run {
             putString("Heigh", editText.text.toString())
             putString("Weigh", editText2.text.toString())
@@ -146,9 +138,6 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-//        outState!!.putString("Weigh", editText2.text.toString())
-//        outState!!.putString("DoubleBmi", editText2.text.toString())
-//        outState!!.putString("StringBmi", editText2.text.toString())
         super.onSaveInstanceState(outState)
     }
 

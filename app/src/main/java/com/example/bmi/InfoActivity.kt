@@ -1,10 +1,8 @@
 package com.example.bmi
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import android.widget.Toast.LENGTH_SHORT
 import kotlinx.android.synthetic.main.activity_info.*
 
 class InfoActivity : AppCompatActivity() {
@@ -17,9 +15,11 @@ class InfoActivity : AppCompatActivity() {
         if(!intent.getStringExtra("bmiValue").equals("?")) {
             textView10.text = intent.getStringExtra("bmiValue")
             textView11.text= intent.getStringExtra("bmiValueInfo")
+            textView10.textSize= 30.0F
         }
         else {
             textView10.text = "Bez podania danych dużo Ci nie pomogę :/"
+            textView10.textSize= 20.0F
             textView11.text= ""
         }
 

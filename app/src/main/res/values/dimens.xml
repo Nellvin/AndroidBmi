@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="bmi_margin_elements">8dp</dimen>
+    <dimen name="bmi_main_margin_elements">8dp</dimen>
     <dimen name="bmi_matchconstraint">0dp</dimen>
     <dimen name="bmi_topmaring_elements">12dp</dimen>
     <dimen name="bmi_maintext">44dp</dimen>
@@ -10,4 +10,22 @@
     <dimen name="bmi_smallertext">24dp</dimen>
     <dimen name="bmi_elementshight_textview">58dp</dimen>
     <dimen name="bmi_mainimage">270dp</dimen>
+    <dimen name="bmi_info_imagebuttonsize">74dp</dimen>
+    <dimen name="bmi_important_textView">171dp</dimen>
+    <dimen name="bmi_aboutMe_imageWidth">424dp</dimen>
+    <dimen name="bmi_aboutMe_imageHeight">346dp</dimen>
+    <dimen name="bmi_aboutMe_textAboutMeHeight">224dp</dimen>
+    <dimen name="bmi_aboutMe_textSizeAboutMeHeight">25dp</dimen>
+    <dimen name="bmi_aboutMe_textFamillyHeight">75dp</dimen>
+    <dimen name="bmi_aboutMe_textSizeFamillyHeight">30dp</dimen>
+    <dimen name="bmi_info_imageHeight">219dp</dimen>
+    <dimen name="bmi_info_imageMarginTop">0dp</dimen>
+    <dimen name="bmi_info_textViewTopMargins">39dp</dimen>
+    <dimen name="bmi_info_textSizeMainTextView">30dp</dimen>
+    <dimen name="bmi_info_textSizeSecondTextView">18dp</dimen>
+    <dimen name="bmi_info_widthMainTextView">173dp</dimen>
+    <dimen name="bmi_info_widthSecondTextView">224dp</dimen>
+    <dimen name="bmi_info_heightSecondTextView">80dp</dimen>
+    <dimen name="bmi_info_heightMainTextView">80dp</dimen>
+    <dimen name="bmi_info_marginStartSecondTextView">14dp</dimen>
 </resources>

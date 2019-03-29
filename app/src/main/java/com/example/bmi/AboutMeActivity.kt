@@ -9,10 +9,10 @@ class AboutMeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.test)
+        setContentView(R.layout.activity_about_me)
         val actionBar = supportActionBar
         actionBar!!.title = "About Me"
 
-    textView5.setMovementMethod(LinkMovementMethod.getInstance());
+        textView5.movementMethod = LinkMovementMethod.getInstance()
     }
 }
