@@ -4,7 +4,11 @@
     <item android:id="@+id/main_menu_abourMe"
           android:title="@string/main_menu_abourMe"
           app:showAsAction="never"
-          ></item>
+    ></item>
+    <item android:id="@+id/main_menu_history"
+          android:title="@string/main_menu_historyy"
+          app:showAsAction="never"
+    ></item>
     <item android:id="@+id/main_menu_changeMesures"
           android:title="@string/main_menu_changeMesures"
           app:showAsAction="never"></item>
