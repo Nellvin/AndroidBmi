@@ -109,6 +109,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AboutMeActivity::class.java)
             startActivity(intent)
         }
+        if (item!!.itemId == R.id.main_menu_history) {
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
+        }
         if (item.itemId == R.id.main_menu_changeMesures) {
             if (europMesure) {
                 textView3.setText(R.string.Heightinch)

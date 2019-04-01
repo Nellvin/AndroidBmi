@@ -1,7 +1,10 @@
 package com.example.bmi
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.LinearLayout
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.layout_listitem.*
 import java.util.*
@@ -14,15 +17,21 @@ class HistoryActivity : AppCompatActivity() {
     var mBMI = ArrayList<String>(10)
     var mDate = ArrayList<String>(10)
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
         val actionBar = supportActionBar
         actionBar!!.title = "History"
+        val recyclerView = findViewById(R.id.recycleView) as RecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
         initList()
+        val adapter = CustomAdapter(mWeight, mHeight, mMeasures, mBMI, mDate)
+
+        recyclerView.adapter = adapter
     }
 
-    private fun initList(){
+    private fun initList() {
         mWeight.add("60")
         mWeight.add("70")
         mWeight.add("80")
@@ -63,7 +72,7 @@ class HistoryActivity : AppCompatActivity() {
         mBMI.add("22.22")
         mBMI.add("22.22")
         mBMI.add("22.22")
-       // val today = Calendar.getInstance()
+        // val today = Calendar.getInstance()
         mDate.add("now")
         mDate.add("now")
         mDate.add("now")
@@ -74,13 +83,6 @@ class HistoryActivity : AppCompatActivity() {
         mDate.add("now")
         mDate.add("now")
         mDate.add("now")
-        initRecycleView()
-    }
 
-    private fun initRecycleView(){
-        val adapter = RecycleViewAdapter(mWeight,mHeight,mMeasures,mBMI,mDate,this)
-        val recycleView = findViewById(R.id.parent_layout) as RecyclerView
-
-        recycleView.adapter=adapter
     }
 }

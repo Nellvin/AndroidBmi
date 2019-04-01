@@ -1,92 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true">
-<androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-                                                   android:layout_height="match_parent"
-                                                   android:background="#48FFF400"
-                                                   tools:context=".MainActivity">
-    <ImageView
-            android:layout_width="@dimen/bmi_matchconstraint"
-            android:layout_height="@dimen/bmi_mainimage" app:srcCompat="@drawable/kotlinek"
-            android:id="@+id/imageView5"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="@dimen/bmi_main_margin_elements"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.517"/>
-    <EditText
-            android:layout_width="@dimen/bmi_matchconstraint"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText" android:layout_marginStart="@dimen/bmi_main_margin_elements"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            android:layout_marginTop="@dimen/bmi_topmargin_elements" app:layout_constraintTop_toBottomOf="@+id/textView3"
-            android:hint="Height"/>
-    <EditText
-            android:layout_width="@dimen/bmi_matchconstraint"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:ems="10"
-            android:id="@+id/editText2" android:layout_marginStart="@dimen/bmi_main_margin_elements"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.043"
-            android:layout_marginTop="@dimen/bmi_topmargin_elements"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            android:hint="Weight"/>
-    <Button
-            android:text="Oblicz BMI"
-            android:layout_width="@dimen/bmi_matchconstraint"
-            android:layout_height="@dimen/bmi_buttons"
-            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="@dimen/bmi_main_margin_elements"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-            app:layout_constraintHorizontal_bias="0.0"
-            android:layout_marginBottom="@dimen/bmi_bottommargin_elements" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="@dimen/bmi_topmargin_elements" app:layout_constraintTop_toBottomOf="@+id/textView"/>
-    <TextView
-            android:text="?"
-            android:layout_width="@dimen/bmi_important_textView"
-            android:layout_height="@dimen/bmi_elementshight_textview"
-            android:id="@+id/textView2" android:textSize="@dimen/bmi_maintext"
-            android:layout_marginTop="@dimen/bmi_topmargin_elements"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" android:layout_marginStart="@dimen/bmi_main_margin_elements"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-            app:layout_constraintEnd_toEndOf="parent" android:textAlignment="center"
-            app:layout_constraintHorizontal_bias="0.498"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView" android:layout_marginTop="@dimen/bmi_topmaring_elements"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-            android:textSize="@dimen/bmi_smallertext"/>
-    <TextView
-            android:text="@string/Heightcm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3" android:layout_marginTop="@dimen/bmi_topmaring_elements"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-            app:layout_constraintHorizontal_bias="0.0"/>
-    <TextView
-            android:text="@string/Weightkg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView4" android:layout_marginTop="@dimen/bmi_topmaring_elements"
-            app:layout_constraintTop_toBottomOf="@+id/editText" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-            app:layout_constraintHorizontal_bias="0.0"/>
-    <ImageButton
-            android:layout_width="@dimen/bmi_info_imagebuttonsize"
-            android:layout_height="@dimen/bmi_info_imagebuttonsize" app:srcCompat="@drawable/send_button_hover"
-            android:id="@+id/imageButton5"
-            android:cropToPadding="true" android:adjustViewBounds="false"
-            app:layout_constraintStart_toEndOf="@+id/textView2" android:layout_marginStart="@dimen/bmi_main_margin_elements"
-            android:layout_marginEnd="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="@dimen/bmi_main_margin_elements"
-            app:layout_constraintTop_toBottomOf="@+id/editText2"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#48FFF400"
+            tools:context=".MainActivity">
+        <ImageView
+                android:layout_width="@dimen/bmi_matchconstraint"
+                android:layout_height="@dimen/bmi_mainimage" app:srcCompat="@drawable/kotlinek"
+                android:id="@+id/imageView5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/bmi_main_margin_elements"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.517"/>
+        <EditText
+                android:layout_width="@dimen/bmi_matchconstraint"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText" android:layout_marginStart="@dimen/bmi_main_margin_elements"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                android:layout_marginTop="@dimen/bmi_topmargin_elements"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                android:hint="Height"/>
+        <EditText
+                android:layout_width="@dimen/bmi_matchconstraint"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/editText2" android:layout_marginStart="@dimen/bmi_main_margin_elements"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.043"
+                android:layout_marginTop="@dimen/bmi_topmargin_elements"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                android:hint="Weight"/>
+        <Button
+                android:text="Oblicz BMI"
+                android:layout_width="@dimen/bmi_matchconstraint"
+                android:layout_height="@dimen/bmi_buttons"
+                android:id="@+id/button" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/bmi_main_margin_elements"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginBottom="@dimen/bmi_bottommargin_elements"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/bmi_topmargin_elements"
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
+        <TextView
+                android:text="?"
+                android:layout_width="@dimen/bmi_important_textView"
+                android:layout_height="@dimen/bmi_elementshight_textview"
+                android:id="@+id/textView2" android:textSize="@dimen/bmi_maintext"
+                android:layout_marginTop="@dimen/bmi_topmargin_elements"
+                app:layout_constraintTop_toBottomOf="@+id/editText2"
+                android:layout_marginStart="@dimen/bmi_main_margin_elements"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
+                app:layout_constraintEnd_toEndOf="parent" android:textAlignment="center"
+                app:layout_constraintHorizontal_bias="0.498"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" android:layout_marginTop="@dimen/bmi_topmaring_elements"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/bmi_main_margin_elements"
+                android:textSize="@dimen/bmi_smallertext"/>
+        <TextView
+                android:text="@string/Heightcm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" android:layout_marginTop="@dimen/bmi_topmaring_elements"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/bmi_main_margin_elements"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:text="@string/Weightkg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" android:layout_marginTop="@dimen/bmi_topmaring_elements"
+                app:layout_constraintTop_toBottomOf="@+id/editText" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/bmi_main_margin_elements"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <ImageButton
+                android:layout_width="@dimen/bmi_info_imagebuttonsize"
+                android:layout_height="@dimen/bmi_info_imagebuttonsize" app:srcCompat="@drawable/send_button_hover"
+                android:id="@+id/imageButton5"
+                android:cropToPadding="true" android:adjustViewBounds="false"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                android:layout_marginStart="@dimen/bmi_main_margin_elements"
+                android:layout_marginEnd="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/bmi_main_margin_elements"
+                app:layout_constraintTop_toBottomOf="@+id/editText2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
