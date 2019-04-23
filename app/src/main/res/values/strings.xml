@@ -4,8 +4,8 @@
     <string name="main_menu_abourMe">About me</string>
     <string name="main_menu_changeMesures">Change Mesures</string>
     <string name="info">About me</string>
-    <string name="Weightkg">Height [kg]</string>
-    <string name="Weightlb">Height [lb]</string>
+    <string name="Weightkg">Weight [kg]</string>
+    <string name="Weightlb">Weight [lb]</string>
     <string name="Heightcm">Height [cm]</string>
     <string name="Heightinch">Height [inch]</string>
 

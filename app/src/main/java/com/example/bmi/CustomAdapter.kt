@@ -11,7 +11,8 @@ class CustomAdapter(
     val mHeight: ArrayList<String>,
     val mMeasures: ArrayList<String>,
     val mBMI: ArrayList<String>,
-    val mDate: ArrayList<String>
+    val mDate: ArrayList<String>,
+    val mAr :ArrayList<String>
 ) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_listitem, parent, false)
@@ -20,17 +21,19 @@ class CustomAdapter(
 
 
     override fun getItemCount(): Int {
-        return mWeight.size
+        return mAr.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.number.text = position.toString()
-        holder.height.text = mHeight[position]
-        holder.weight.text = mWeight[position]
-        holder.measures.text = mMeasures[position]
-        holder.BMI.text = mBMI[position]
-        holder.Date.text = mDate[position]
+        val combi= mAr[position].split("|")
 
+        holder.number.text = (position+1).toString()
+        holder.height.text = combi[0]
+        holder.weight.text = combi[1]
+        holder.measures.text = combi[2]
+        holder.BMI.text = combi[3]
+        holder.Date.text = combi[4]
+        holder.BMI.setTextColor(combi[5].toInt())
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -40,7 +43,6 @@ class CustomAdapter(
         val measures = itemView.findViewById(R.id.textView12) as TextView
         val BMI = itemView.findViewById(R.id.textView13) as TextView
         val Date = itemView.findViewById(R.id.textView14) as TextView
-        // val parentLayout=itemView.findViewById(R.id.parent_layout) as TextView
     }
 
 
