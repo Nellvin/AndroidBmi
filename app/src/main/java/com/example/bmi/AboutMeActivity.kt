@@ -12,7 +12,6 @@ class AboutMeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_about_me)
         val actionBar = supportActionBar
         actionBar!!.title = "About Me"
-
         textView5.movementMethod = LinkMovementMethod.getInstance()
     }
 }

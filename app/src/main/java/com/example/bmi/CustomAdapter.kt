@@ -7,12 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(
-    val mWeight: ArrayList<String>,
-    val mHeight: ArrayList<String>,
-    val mMeasures: ArrayList<String>,
-    val mBMI: ArrayList<String>,
-    val mDate: ArrayList<String>,
-    val mAr :ArrayList<String>
+        val historyArr :ArrayList<String>
 ) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_listitem, parent, false)
@@ -21,19 +16,19 @@ class CustomAdapter(
 
 
     override fun getItemCount(): Int {
-        return mAr.size
+        return historyArr.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val combi= mAr[position].split("|")
+        val historyData= historyArr[position].split("|")
 
         holder.number.text = (position+1).toString()
-        holder.height.text = combi[0]
-        holder.weight.text = combi[1]
-        holder.measures.text = combi[2]
-        holder.BMI.text = combi[3]
-        holder.Date.text = combi[4]
-        holder.BMI.setTextColor(combi[5].toInt())
+        holder.height.text = historyData[0]
+        holder.weight.text = historyData[1]
+        holder.measures.text = historyData[2]
+        holder.BMI.text = historyData[3]
+        holder.Date.text = historyData[4]
+        holder.BMI.setTextColor(historyData[5].toInt())
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

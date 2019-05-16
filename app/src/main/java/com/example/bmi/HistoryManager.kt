@@ -1,11 +1,8 @@
 package com.example.bmi
 
-class Historyy() {
+class HistoryManager() {
     var his = ArrayList<String>()
 
-    init {
-
-    }
 
     fun getArray(): ArrayList<String> {
         return his

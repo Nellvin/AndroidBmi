@@ -15,6 +15,17 @@
     <string name="about_me">Cześć jestem Filip Löffler \n zrobiłem tą śmieszą aplikacje \ni mam nadzieję, że sie podoba
     </string>
     <string name="main_menu_historyy">History</string>
+    <string name="v_sev_under">Very severely underweight</string>
+    <string name="sev_under">Severely underweight</string>
+    <string name="under">Underweight</string>
+    <string name="healthy">Healthy weight</string>
+    <string name="over">Overweight</string>
+    <string name="mod_obe">Moderately obese</string>
+    <string name="sev_obe">Severely obese</string>
+    <string name="ver_sev_obe">Very severely obese</string>
+    <string name="mor_obe">Morbidly Obese</string>
+    <string name="sup_obes">Super Obese</string>
+    <string name="hyp_obe">Hyper Obese</string>
 
 
 </resources>

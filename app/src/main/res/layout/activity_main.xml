@@ -33,7 +33,7 @@
         <EditText
                 android:layout_width="@dimen/bmi_matchconstraint"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:inputType="number"
                 android:ems="10"
                 android:id="@+id/editText2" android:layout_marginStart="@dimen/bmi_main_margin_elements"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="@dimen/bmi_main_margin_elements"
@@ -80,7 +80,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView5" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-                app:layout_constraintHorizontal_bias="0.0"/>
+                app:layout_constraintHorizontal_bias="0.0" android:textSize="18sp"/>
         <TextView
                 android:text="@string/Weightkg"
                 android:layout_width="wrap_content"
@@ -89,16 +89,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="@dimen/bmi_main_margin_elements"
-                app:layout_constraintHorizontal_bias="0.0"/>
+                app:layout_constraintHorizontal_bias="0.0" android:textSize="18sp"/>
         <ImageButton
                 android:layout_width="@dimen/bmi_info_imagebuttonsize"
-                android:layout_height="@dimen/bmi_info_imagebuttonsize" app:srcCompat="@drawable/send_button_hover"
+                android:layout_height="@dimen/bmi_info_imagebuttonsize" app:srcCompat="@android:drawable/ic_dialog_info"
                 android:id="@+id/imageButton5"
-                android:cropToPadding="true" android:adjustViewBounds="false"
                 app:layout_constraintStart_toEndOf="@+id/textView2"
                 android:layout_marginStart="@dimen/bmi_main_margin_elements"
                 android:layout_marginEnd="@dimen/bmi_main_margin_elements" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="@dimen/bmi_main_margin_elements"
-                app:layout_constraintTop_toBottomOf="@+id/editText2"/>
+                app:layout_constraintTop_toBottomOf="@+id/editText2"
+                android:elevation="0dp" android:visibility="visible" android:cropToPadding="true"
+                android:adjustViewBounds="false"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
